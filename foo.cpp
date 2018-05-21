@@ -1,35 +1,27 @@
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <map>
 #include <string>
 #include <iomanip>
+#include "counter.hpp"
 
-void fill_map(std::map<int, std::string> &cnt,std::map<std::string, int> &cnt2,std::ifstream &data){
-    int index=1;
-    std::string temp;
-    while(!data.eof()){
+void fill_map(std::map<std::string, counter> &cnt, std::ifstream &data){
+    std::string wrd;
+    while ( !data.eof() ){
 
-        data>>temp;
-
-        cnt[index]=temp;
-
-        cnt2[temp]=index;
-        index++;
+        data >> wrd;
+        cnt[wrd]++;
     }
 }
 
-void comp_toFile(std::map<int, std::string> &cnt, std::map<std::string, int> &cnt2, std::ofstream &result){
+void comp_toFile(std::map<std::string, counter> &cnt, std::ofstream &result){
 
     result<<std::left<< std::setw(30)<<" WORD "<<std::setw(15)<< " COUNT " <<std::endl;
 
-    for(auto iit=cnt2.begin(); iit!=cnt2.end(); iit++){
-        int times=0;
-        for (auto it = cnt.begin(); it != cnt.end(); ++it ){
-            if ((*it).second == (*iit).first){
-                    times++;
+    for (auto it  = cnt.begin(); it != cnt.end(); it++ ){
 
-            }
-        }
-        if(times>1) result<<std::left<< std::setw(30)<<(*iit).first<<std::setw(15)<< times <<std::endl;
+        if((*it).second>1) std::cout<<std::left<< std::setw(30)<<(*it).first<<std::setw(15)<<(*it).second <<std::endl;
     }
+
 }

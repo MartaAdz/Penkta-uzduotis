@@ -3,9 +3,10 @@
 
 #include <fstream>
 #include <map>
+#include "counter.hpp"
 
-void fill_map(std::map<int, std::string> &cnt, std::map<std::string, int> &cnt2,std::ifstream &data);
+void fill_map(std::map<std::string, counter> &cnt,std::ifstream &data);
 
-void comp_toFile(std::map<int, std::string> &cnt, std::map<std::string, int> &cnt2, std::ofstream &result);
+void comp_toFile(std::map<std::string, counter> &cnt, std::ofstream &result);
 
 #endif
