@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1526853802 source:c:\users\marta\desktop\prj\main.cpp
+	<iostream>
+	<fstream>
+	<map>
+	<string>
+
+1526894417 source:c:\users\marta\desktop\prj\foo.cpp
+	<iostream>
+	<fstream>
+	<map>
+	<string>
+	<iomanip>
+
