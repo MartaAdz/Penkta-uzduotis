@@ -41,7 +41,7 @@ std::vector<unsigned int> find_line(std::string &wrd, std::ifstream &data){
 }
 void comp_toFile(std::map<std::string, counter> &cnt, std::ofstream &result, std::ifstream &data){
 
-    result<<std::left<< std::setw(15)<<" WORD "<<std::setw(15)<< " COUNT " <<std::endl;
+    result<<std::left<< std::setw(15)<<" WORD "<<std::setw(15)<< " COUNT "<<std::setw(15)<< " EILUTES " <<std::endl;
 
     std::vector<unsigned int> lines;
     std::string temp;
@@ -54,13 +54,15 @@ void comp_toFile(std::map<std::string, counter> &cnt, std::ofstream &result, std
         if ((*it).second>1){
 
             result<<std::left<< std::setw(15)<<(*it).first
-                                <<std::setw(15)<<(*it).second <<"\ngalima rasti eilutese: ";
+                                <<std::setw(15)<<(*it).second;
 
             for(auto iit=lines.begin(); iit!=lines.end(); iit++){
-
+                if(!(*iit)) std::cout<<"  ";
+                else std::cout<<*iit;
                 result<<*iit<<" ";
             }
             result<<"\n"<<std::endl;
+            std::cout<<"\n"<<std::endl;
         }
     }
 }
