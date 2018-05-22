@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1526938112 source:c:\users\marta\desktop\prj\main.cpp
+1526951059 source:c:\users\marta\desktop\prj\main.cpp
 	<iostream>
 	<fstream>
 	<sstream>
@@ -9,18 +9,22 @@
 	"foo.hpp"
 	"counter.hpp"
 
-1526936743 source:c:\users\marta\desktop\prj\foo.cpp
+1526950378 source:c:\users\marta\desktop\prj\foo.cpp
 	<iostream>
 	<fstream>
 	<sstream>
 	<map>
 	<string>
 	<iomanip>
+	<vector>
+	"counter.hpp"
 
-1526935603 c:\users\marta\desktop\prj\foo.hpp
+1526950961 c:\users\marta\desktop\prj\foo.hpp
 	<fstream>
 	<map>
+	<vector>
+	"counter.hpp"
 
-1526938401 c:\users\marta\desktop\prj\counter.hpp
+1526939328 c:\users\marta\desktop\prj\counter.hpp
 	<fstream>
 

@@ -32,6 +32,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="counter.hpp" />
+		<Unit filename="foo.cpp" />
+		<Unit filename="foo.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
