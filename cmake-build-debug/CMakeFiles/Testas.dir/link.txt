@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2018.1\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\Testas.dir/objects.a
-C:\PROGRA~1\MINGW-~1\mingw64\bin\ar.exe cr CMakeFiles\Testas.dir/objects.a @CMakeFiles\Testas.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\Testas.dir/objects.a -Wl,--no-whole-archive  -o Testas.exe -Wl,--out-implib,libTestas.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Testas.dir\linklibs.rsp
