@@ -14,16 +14,16 @@ int main() {
     std::ifstream data("straipsnis.txt");
 
     try{
-            if(data.fail())
-            {
-                throw std::exception();
-            }
+        if(data.fail())
+        {
+            throw std::exception();
         }
-        catch (std::exception &e1)
-        {   e1.what();
-            std::cerr<<"No such file";
-            exit(1);
-        }
+    }
+    catch (std::exception &e1)
+    {   e1.what();
+        std::cerr<<"No such file";
+        exit(1);
+    }
 
     fill_map(cnt, data);
 

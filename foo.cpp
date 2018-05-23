@@ -25,15 +25,15 @@ std::vector<unsigned int> find_line(std::string &wrd, std::ifstream &data){
 
     unsigned int line = 0;
 
-        while (std::getline(data, temp))
-        {
-            line++;
+    while (std::getline(data, temp))
+    {
+        line++;
 
-            if (temp.find(wrd) != std::string::npos) {
-                    lines.push_back(line);
-            }
-
+        if (temp.find(wrd) != std::string::npos) {
+            lines.push_back(line);
         }
+
+    }
 
     data.clear();
     data.seekg(0, data.beg);
@@ -54,15 +54,14 @@ void comp_toFile(std::map<std::string, counter> &cnt, std::ofstream &result, std
         if ((*it).second>1){
 
             result<<std::left<< std::setw(15)<<(*it).first
-                                <<std::setw(15)<<(*it).second;
+                  <<std::setw(15)<<(*it).second;
 
             for(auto iit=lines.begin(); iit!=lines.end(); iit++){
-                if(!(*iit)) std::cout<<"  ";
-                else std::cout<<*iit;
+
                 result<<*iit<<" ";
             }
             result<<"\n"<<std::endl;
-            std::cout<<"\n"<<std::endl;
+
         }
     }
 }

@@ -1,0 +1,4 @@
+C:/Users/Marta/Documents/objektinis/uzduotys/penkta_uzd/cmake-build-debug/CMakeFiles/penkta_uzduotis.dir
+C:/Users/Marta/Documents/objektinis/uzduotys/penkta_uzd/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Marta/Documents/objektinis/uzduotys/penkta_uzd/cmake-build-debug/CMakeFiles/Testas.dir
+C:/Users/Marta/Documents/objektinis/uzduotys/penkta_uzd/cmake-build-debug/CMakeFiles/edit_cache.dir
