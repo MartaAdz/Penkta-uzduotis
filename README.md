@@ -54,5 +54,6 @@
 
 # Pastabele
 
-- Neveikia Unit TEstai
-  
+![alt text][logo]
+
+[logo]:https://github.com/MartaAdz/Penkta-uzduotis/blob/master/Unit_testing/unit_test_penkta_uzd.PNG?raw=true "Unit testingas"
