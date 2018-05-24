@@ -17,7 +17,7 @@
 
 ## Cool dalykai
 
- ```
+ ```cpp 
     std::vector<unsigned int> find_line(std::string &wrd, std::ifstream &data){
       std::vector<unsigned int> lines;
       std::string temp;
@@ -41,7 +41,7 @@
     }
 ```
 
-```
+```cpp
     void operator++ (int) {value++;}
     bool operator>(int cmp){ return value>cmp;}
     bool operator<(int cmp){ return value<cmp;}
