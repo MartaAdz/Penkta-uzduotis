@@ -14,3 +14,41 @@
 
 2. Outpute nurodyta: žodis, kiek kartų pasikartojo, kokiose eilutėse buvo pavartotas.
 3. Padarytas Catch unit testas eilutėms surasti. 
+
+## Cool dalykai
+
+ ```
+    std::vector<unsigned int> find_line(std::string &wrd, std::ifstream &data){
+      std::vector<unsigned int> lines;
+      std::string temp;
+
+      unsigned int line = 0;
+
+      while (std::getline(data, temp))
+      {
+          line++;
+
+          if (temp.find(wrd) != std::string::npos) {
+              lines.push_back(line);
+          }
+
+      }
+
+      data.clear();
+      data.seekg(0, data.beg);
+      
+      return lines;
+    }
+```
+
+```
+    void operator++ (int) {value++;}
+    bool operator>(int cmp){ return value>cmp;}
+    bool operator<(int cmp){ return value<cmp;}
+
+    friend std::ostream& operator<<(std::ostream &file, counter &c){
+        file<<c.value;
+        return file;
+    }
+```
+  
