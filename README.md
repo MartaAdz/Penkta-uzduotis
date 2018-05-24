@@ -52,7 +52,7 @@
     }
 ```
 
-# Pastabele
+# Teisingai su'build'intas Unit Testas
 
 ![alt text][logo]
 
